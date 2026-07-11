@@ -1,0 +1,21 @@
+# Virtual environment
+.venv/
+
+# Environment variables
+.env
+**/.env
+
+# Python
+__pycache__/
+*.py[cod]
+
+# ADK
+.adk/
+**/.adk/
+
+# Database
+*.db
+
+# IDE
+.vscode/
+.idea/
