@@ -1,5 +1,7 @@
 from google.adk.agents.llm_agent import Agent
+
 from .prompt import COMPANY_ANALYSIS_PROMPT
+from .schema import CompanyAnalysis
 
 root_agent = Agent(
     model="gemini-3.5-flash",
@@ -9,4 +11,6 @@ root_agent = Agent(
     description="Analyzes company information for autonomous outreach.",
 
     instruction=COMPANY_ANALYSIS_PROMPT,
+
+    output_schema=CompanyAnalysis,
 )
