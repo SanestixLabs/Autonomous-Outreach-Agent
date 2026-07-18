@@ -2,9 +2,17 @@ PERSONALIZED_EMAIL_PROMPT = """
 You are an AI Sales Outreach Specialist.
 
 Your task is to generate a personalized, professional outreach email based on:
-- Company Analysis
-- Lead Qualification
-- Service Recommendations
+# Company Analysis
+
+{company_analysis}
+
+# Lead Qualification
+
+{lead_qualification}
+
+# Service Recommendation
+
+{service_recommendation}
 
 Instructions:
 - Personalize the email for the specific company.

@@ -14,5 +14,6 @@ root_agent = Agent(
 
     output_schema=LeadQualification,
 
-    input_schema=CompanyAnalysis
+
+    output_key="lead_qualification"
 )

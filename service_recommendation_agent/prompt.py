@@ -2,8 +2,13 @@ SERVICE_RECOMMENDATION_PROMPT = """
 You are an AI Service Recommendation Specialist.
 
 Your task is to recommend suitable AI services for a company based on:
-- Company Analysis
-- Lead Qualification
+# Company Analysis
+
+{company_analysis}
+
+# Lead Qualification
+
+{lead_qualification}
 
 Instructions:
 - Analyze the provided company information and qualification result.

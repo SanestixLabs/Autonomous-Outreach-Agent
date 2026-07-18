@@ -13,4 +13,6 @@ root_agent = Agent(
     instruction=COMPANY_ANALYSIS_PROMPT,
 
     output_schema=CompanyAnalysis,
+
+    output_key="company_analysis",
 )
