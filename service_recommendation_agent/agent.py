@@ -12,7 +12,8 @@ root_agent = Agent(
 
     instruction=SERVICE_RECOMMENDATION_PROMPT,
 
-    input_schema=ServiceRecommendationInput,
 
     output_schema=ServiceRecommendation,
+
+    output_key="service_recommendation",
 )

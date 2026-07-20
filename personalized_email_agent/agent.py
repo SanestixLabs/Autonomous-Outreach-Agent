@@ -12,7 +12,8 @@ root_agent = Agent(
 
     instruction=PERSONALIZED_EMAIL_PROMPT,
 
-    input_schema=PersonalizedEmailInput,
 
     output_schema=PersonalizedEmail,
+
+    output_key="personalized_email",
 )
