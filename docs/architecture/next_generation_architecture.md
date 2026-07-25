@@ -214,6 +214,7 @@ The abstraction layer is responsible for:
 - Providing a consistent interface for all AI agents.
 
 This design improves system reliability and availability by preventing a single provider outage from interrupting the entire AI pipeline. It simplifies future maintenance, enables seamless migration between different LLM providers as business or technical requirements evolve, and provides automatic failover during temporary provider outages.
+
 ---
 
 ### 6.5 Workflow Branching
