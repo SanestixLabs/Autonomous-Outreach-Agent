@@ -1,6 +1,6 @@
 from datetime import datetime
 from enum import Enum
-
+from common.enums import WorkflowType
 from pydantic import BaseModel, Field
 
 from company_analysis_agent.schema import CompanyAnalysis
@@ -48,7 +48,7 @@ class InteractionHistory(BaseModel):
 
 
 class WorkflowExecution(BaseModel):
-    workflow_name: str = Field(
+    workflow_name: WorkflowType = Field(
         description="Name of the executed workflow."
     )
 
@@ -113,7 +113,7 @@ class LeadMemory(BaseModel):
         description="History of executed workflows."
     )
 
-    last_workflow: str | None = Field(
+    last_workflow: WorkflowType | None = Field(
         default=None,
         description="Most recently executed workflow."
     )
