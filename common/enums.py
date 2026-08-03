@@ -7,3 +7,8 @@ class WorkflowType(str, Enum):
     SERVICE_RECOMMENDATION = "Service Recommendation"
     PERSONALIZED_EMAIL = "Personalized Email"
     CRM_SYNC = "CRM Sync"
+
+class ProviderType(str, Enum):
+    GEMINI = "gemini"
+    GROQ = "groq"
+    OPENAI = "openai"
