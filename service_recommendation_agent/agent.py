@@ -1,10 +1,10 @@
 from google.adk.agents.llm_agent import Agent
-
+from llm_provider.factory import ProviderFactory
 from .prompt import SERVICE_RECOMMENDATION_PROMPT
 from .schema import ServiceRecommendation, ServiceRecommendationInput
 
 root_agent = Agent(
-    model="gemini-3.5-flash",
+    model=ProviderFactory.get_model(),
 
     name="service_recommendation_agent",
 

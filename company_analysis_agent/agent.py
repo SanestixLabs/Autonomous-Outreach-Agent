@@ -1,10 +1,10 @@
 from google.adk.agents.llm_agent import Agent
-
+from llm_provider.factory import ProviderFactory
 from .prompt import COMPANY_ANALYSIS_PROMPT
 from .schema import CompanyAnalysis
 
 root_agent = Agent(
-    model="gemini-3.5-flash",
+    model=ProviderFactory.get_model(),
 
     name="company_analysis_agent",
 

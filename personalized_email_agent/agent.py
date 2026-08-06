@@ -1,10 +1,10 @@
 from google.adk.agents.llm_agent import Agent
-
+from llm_provider.factory import ProviderFactory
 from .prompt import PERSONALIZED_EMAIL_PROMPT
 from .schema import PersonalizedEmail, PersonalizedEmailInput
 
 root_agent = Agent(
-    model="gemini-3.5-flash",
+    model=ProviderFactory.get_model(),
 
     name="personalized_email_agent",
 
